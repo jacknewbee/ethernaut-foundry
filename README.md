@@ -66,3 +66,4 @@ $ cast --help
 ```
 forge test --fork-url $SEPOLIA_RPC_URL -vv
 forge script script/Level1.s.sol:Level1Script --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY -vvv 
+forge script script/Level2.s.sol:Level2Script --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY -vvv 
