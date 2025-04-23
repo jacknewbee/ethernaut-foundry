@@ -66,3 +66,8 @@ $ cast --help
 ```
 forge test --fork-url $SEPOLIA_RPC_URL -vv
 forge script script/Level1.s.sol:Level1Script --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY -vvv 
+forge script script/Level3.s.sol:Level3Script --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY -vvv 
+level3 : 
+forge script script/Level3.s.sol:Level3Script --rpc-url $env:SEPOLIA_RPC_URL --private-key $env:PRIVATE_KEY -vvv --broadcast --slow --gas-limit 3000000 --gas-estimate-multiplier 200 --sig "execute(address)" 0xe07da093Ae9b2Cf16FF6aAbB80eb7ed5F7E455D2
+level4 : 
+forge script script/Level4.s.sol:Level4Script --rpc-url $env:SEPOLIA_RPC_URL --private-key $env:PRIVATE_KEY -vvv --broadcast --slow --gas-limit 3000000 --gas-estimate-multiplier 200
