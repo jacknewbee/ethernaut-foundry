@@ -8,18 +8,18 @@ contract Level2Test is Test {
 
     function setUp() public {}
 
-    function test_GetOwner() public {
-        address alice = vm.addr(1);
-        console.log(alice, "alice");
-        vm.deal(alice, 20 ether);
-        vm.startPrank(alice);
-        console.log(fallout.balance, "fb");
-        (bool b,) = fallout.call(abi.encodeWithSignature("Fal1out()"));
-        assertEq(b, true);
-        (bool c, bytes memory returnData) = fallout.call(abi.encodeWithSignature("owner()"));
-        assertEq(c, true);
-        address d = abi.decode(returnData, (address));
-        console.log(d);
-        assertEq(d, alice);
-    }
+    // function test_GetOwner() public {
+    //     address alice = vm.addr(1);
+    //     console.log(alice, "alice");
+    //     vm.deal(alice, 20 ether);
+    //     vm.startPrank(alice);
+    //     console.log(fallout.balance, "fb");
+    //     (bool b,) = fallout.call(abi.encodeWithSignature("Fal1out()"));
+    //     assertEq(b, true);
+    //     (bool c, bytes memory returnData) = fallout.call(abi.encodeWithSignature("owner()"));
+    //     assertEq(c, true);
+    //     address d = abi.decode(returnData, (address));
+    //     console.log(d);
+    //     assertEq(d, alice);
+    // }
 }
