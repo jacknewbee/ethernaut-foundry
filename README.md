@@ -77,3 +77,18 @@ level4 :
 forge script script/Level4.s.sol:Level4Script --rpc-url $env:SEPOLIA_RPC_URL --private-key $env:PRIVATE_KEY -vvv --broadcast --slow --gas-limit 3000000 --gas-estimate-multiplier 200
 submit:
 forge script script/Submit.s.sol:SubmitScript --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY -vvv --broadcast --slow --gas-limit 3000000 --gas-estimate-multiplier 200
+forge script script/Submit.s.sol:SubmitScript --rpc-url $env:SEPOLIA_RPC_URL --private-key $env:PRIVATE_KEY -vvv --broadcast --slow --gas-limit 3000000 --gas-estimate-multiplier 200
+level5:
+forge script script/Level5.s.sol:Level5Script --rpc-url $env:SEPOLIA_RPC_URL --private-key $env:PRIVATE_KEY -vvv --broadcast --slow --gas-limit 3000000 --gas-estimate-multiplier 200 
+level6:
+forge script script/Level6.s.sol:Level6Script --rpc-url $env:SEPOLIA_RPC_URL --private-key $env:PRIVATE_KEY -vvv --broadcast --slow --gas-limit 3000000 --gas-estimate-multiplier 200 
+level7:
+forge script script/Level7.s.sol:Level7Script --rpc-url $env:SEPOLIA_RPC_URL --private-key $env:PRIVATE_KEY -vvv --broadcast --slow --gas-limit 3000000 --gas-estimate-multiplier 200 
+level8:
+forge script script/Level8.s.sol:Level8Script --rpc-url $env:SEPOLIA_RPC_URL --private-key $env:PRIVATE_KEY -vvv --broadcast --slow --gas-limit 3000000 --gas-estimate-multiplier 200 
+level9:
+forge script script/Level9.s.sol:Level9Script --rpc-url $env:SEPOLIA_RPC_URL --private-key $env:PRIVATE_KEY -vvv --broadcast --slow --gas-limit 3000000 --gas-estimate-multiplier 200 
+level10:
+forge script script/Level10.s.sol:Level10Script --rpc-url $env:SEPOLIA_RPC_URL --private-key $env:PRIVATE_KEY -vvv --broadcast --slow --gas-limit 3000000 --gas-estimate-multiplier 200 
+level11:
+forge script script/Level11.s.sol:Level11Script --rpc-url $env:SEPOLIA_RPC_URL --private-key $env:PRIVATE_KEY -vvv --broadcast --slow --gas-limit 3000000 --gas-estimate-multiplier 200 
