@@ -66,6 +66,7 @@ $ cast --help
 ```
 anvil --fork-url $SEPOLIA_RPC_URL
 
+cast gasPrice --rpc-url $SEPOLIA_RPC_URL
 
 forge test --fork-url $SEPOLIA_RPC_URL -vv
 forge test --fork-url $ANVIL_RPC_URL -vvv
@@ -92,3 +93,4 @@ level10:
 forge script script/Level10.s.sol:Level10Script --rpc-url $env:SEPOLIA_RPC_URL --private-key $env:PRIVATE_KEY -vvv --broadcast --slow --gas-limit 3000000 --gas-estimate-multiplier 200 
 level11:
 forge script script/Level11.s.sol:Level11Script --rpc-url $env:SEPOLIA_RPC_URL --private-key $env:PRIVATE_KEY -vvv --broadcast --slow --gas-limit 3000000 --gas-estimate-multiplier 200 
+forge script script/Level11.s.sol:Level11Script --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY -vvv --broadcast --slow --gas-limit 3000000 --gas-estimate-multiplier 200 
