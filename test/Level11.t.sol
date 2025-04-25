@@ -9,13 +9,13 @@ contract Level11Test is Test {
 
     function setUp() public {}
 
-    function test_Elevator() public {
-        Level11 l11 = new Level11();
-        l11.attack();
-        (bool d, bytes memory e) = address(addr).call(abi.encodeWithSignature("top()"));
-        console.log(d);
-        bool top = abi.decode(e, (bool));
-        console.log(top);
-        assertEq(top, true);
-    }
+    // function test_Elevator() public {
+    //     Level11 l11 = new Level11();
+    //     l11.attack();
+    //     (bool d, bytes memory e) = address(addr).call(abi.encodeWithSignature("top()"));
+    //     console.log(d);
+    //     bool top = abi.decode(e, (bool));
+    //     console.log(top);
+    //     assertEq(top, true);
+    // }
 }

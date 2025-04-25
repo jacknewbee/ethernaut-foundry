@@ -1,0 +1,47 @@
+{
+  "transactions": [
+    {
+      "hash": "0x9fb51e3ab43eccd3ec4708d4b3433b9ba1c4df96917bd9ba580f845ef108bd9c",
+      "transactionType": "CALL",
+      "contractName": null,
+      "contractAddress": "0x9c04cf47d1edaa691e16c5f06f82073b8fe8a8c5",
+      "function": null,
+      "arguments": null,
+      "transaction": {
+        "from": "0xb1eab112a506ab057ed7c5e9ab32758521497951",
+        "to": "0x9c04cf47d1edaa691e16c5f06f82073b8fe8a8c5",
+        "gas": "0x8940",
+        "value": "0x0",
+        "input": "0xe1afb08c6b7794e80d2a9b991a4899f308c4d13d00000000000000000000000000000000",
+        "nonce": "0x46",
+        "chainId": "0xaa36a7"
+      },
+      "additionalContracts": [],
+      "isFixedGasLimit": false
+    }
+  ],
+  "receipts": [
+    {
+      "status": "0x1",
+      "cumulativeGasUsed": "0xaa13c4",
+      "logs": [],
+      "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "type": "0x2",
+      "transactionHash": "0x9fb51e3ab43eccd3ec4708d4b3433b9ba1c4df96917bd9ba580f845ef108bd9c",
+      "transactionIndex": "0x73",
+      "blockHash": "0xffd5dff4e16516993871730a6365200dadeaf0e76a9adff3c6073082f81b6ca4",
+      "blockNumber": "0x7cfd83",
+      "gasUsed": "0x5dd9",
+      "effectiveGasPrice": "0x7b119d04c",
+      "from": "0xb1eab112a506ab057ed7c5e9ab32758521497951",
+      "to": "0x9c04cf47d1edaa691e16c5f06f82073b8fe8a8c5",
+      "contractAddress": null
+    }
+  ],
+  "libraries": [],
+  "pending": [],
+  "returns": {},
+  "timestamp": 1745567174,
+  "chain": 11155111,
+  "commit": "f371bea"
+}

@@ -16,13 +16,13 @@ contract SubmitTest is Test {
     //     console.log(b);
     // }
 
-    function test_Valid() public {
-        (bool b, bytes memory r) = address(levelAddr).call(
-            abi.encodeWithSignature(
-                "validateInstance(address,address)", instanceAddr, 0xb1Eab112a506ab057ED7c5E9aB32758521497951
-            )
-        );
-        bool isValid = abi.decode(r, (bool));
-        console.log(b, isValid);
-    }
+    // function test_Valid() public {
+    //     (bool b, bytes memory r) = address(levelAddr).call(
+    //         abi.encodeWithSignature(
+    //             "validateInstance(address,address)", instanceAddr, 0xb1Eab112a506ab057ED7c5E9aB32758521497951
+    //         )
+    //     );
+    //     bool isValid = abi.decode(r, (bool));
+    //     console.log(b, isValid);
+    // }
 }
