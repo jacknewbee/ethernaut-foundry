@@ -66,6 +66,7 @@ $ cast --help
 ```
 anvil --fork-url $SEPOLIA_RPC_URL
 
+cast gasPrice --rpc-url $SEPOLIA_RPC_URL
 
 forge test --fork-url $SEPOLIA_RPC_URL -vv
 forge test --fork-url $env:SEPOLIA_RPC_URL -vv
