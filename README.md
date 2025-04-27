@@ -79,7 +79,7 @@ level4 :
 forge script script/Level4.s.sol:Level4Script --rpc-url $env:SEPOLIA_RPC_URL --private-key $env:PRIVATE_KEY -vvv --broadcast --slow --gas-limit 3000000 --gas-estimate-multiplier 200
 submit:
 forge script script/Submit.s.sol:SubmitScript --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY -vvv --broadcast --slow --gas-limit 3000000 --gas-estimate-multiplier 200
-forge script script/Submit.s.sol:SubmitScript --rpc-url $env:SEPOLIA_RPC_URL --private-key $env:PRIVATE_KEY -vvv --broadcast --slow --gas-limit 3000000 --gas-estimate-multiplier 200
+
 level5:
 forge script script/Level5.s.sol:Level5Script --rpc-url $env:SEPOLIA_RPC_URL --private-key $env:PRIVATE_KEY -vvv --broadcast --slow --gas-limit 3000000 --gas-estimate-multiplier 200 
 level6:
@@ -96,3 +96,16 @@ level11:
 forge script script/Level11.s.sol:Level11Script --rpc-url $env:SEPOLIA_RPC_URL --private-key $env:PRIVATE_KEY -vvv --broadcast --slow --gas-limit 3000000 --gas-estimate-multiplier 200 
 level12:
 forge script script/Level12.s.sol:Level12Script --rpc-url $env:SEPOLIA_RPC_URL --private-key $env:PRIVATE_KEY -vvv --broadcast --slow 
+level13:
+forge script script/Level13.s.sol:Level13Script --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY -vvv --broadcast --slow 
+
+
+
+windows export .env
+Get-Content .env | ForEach-Object {
+    if ($_ -match "^\s*([^#=]+)\s*=\s*(.*)\s*$") {
+        $key = $matches[1].Trim()
+        $value = $matches[2].Trim('"') 
+        Set-Variable -Name $key -Value $value -Scope Global
+    }
+}

@@ -1,16 +1,18 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
+import {console} from "forge-std/Test.sol";
+
 contract Level13R {
     address public entrant;
 
     modifier gateOne() {
-        require(msg.sender != tx.origin);
+        require(msg.sender != tx.origin, "1");
         _;
     }
 
     modifier gateTwo() {
-        require(gasleft() % 8191 == 0);
+        require(gasleft() % 8191 == 0, "2saw");
         _;
     }
 
