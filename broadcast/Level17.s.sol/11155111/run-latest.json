@@ -1,0 +1,47 @@
+{
+  "transactions": [
+    {
+      "hash": "0x1ac0103f1838e6247b632907549491aea3d6aee04df207acb964746bc3d26a47",
+      "transactionType": "CALL",
+      "contractName": null,
+      "contractAddress": "0xf323ce834cc03252495517f84756c71d019aea4f",
+      "function": null,
+      "arguments": null,
+      "transaction": {
+        "from": "0xb1eab112a506ab057ed7c5e9ab32758521497951",
+        "to": "0xf323ce834cc03252495517f84756c71d019aea4f",
+        "gas": "0x986e",
+        "value": "0x0",
+        "input": "0x00f55d9d000000000000000000000000b1eab112a506ab057ed7c5e9ab32758521497951",
+        "nonce": "0x5a",
+        "chainId": "0xaa36a7"
+      },
+      "additionalContracts": [],
+      "isFixedGasLimit": false
+    }
+  ],
+  "receipts": [
+    {
+      "status": "0x1",
+      "cumulativeGasUsed": "0x102bc7c",
+      "logs": [],
+      "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "type": "0x2",
+      "transactionHash": "0x1ac0103f1838e6247b632907549491aea3d6aee04df207acb964746bc3d26a47",
+      "transactionIndex": "0x99",
+      "blockHash": "0xb9b0d78ecaa2a67fbd69f2cab1472ed7094cf3d0ee1d118bf0bc63288b90bc62",
+      "blockNumber": "0x7d4d88",
+      "gasUsed": "0x683a",
+      "effectiveGasPrice": "0x4fd6eeb29",
+      "from": "0xb1eab112a506ab057ed7c5e9ab32758521497951",
+      "to": "0xf323ce834cc03252495517f84756c71d019aea4f",
+      "contractAddress": null
+    }
+  ],
+  "libraries": [],
+  "pending": [],
+  "returns": {},
+  "timestamp": 1745830671,
+  "chain": 11155111,
+  "commit": "9d3564f"
+}

@@ -98,7 +98,14 @@ level12:
 forge script script/Level12.s.sol:Level12Script --rpc-url $env:SEPOLIA_RPC_URL --private-key $env:PRIVATE_KEY -vvv --broadcast --slow 
 level13:
 forge script script/Level13.s.sol:Level13Script --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY -vvv --broadcast --slow 
-
+level14:
+forge script script/Level14.s.sol:Level14Script --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY -vvv --broadcast --slow 
+level15:
+forge script script/Level15.s.sol:Level15Script --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY -vvv --broadcast --slow 
+level16:
+forge script script/Level16.s.sol:Level16Script --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY -vvv --broadcast --slow 
+level17:
+forge script script/Level17.s.sol:Level17Script --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY -vvv --broadcast --slow 
 
 
 windows export .env
