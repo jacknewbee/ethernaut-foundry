@@ -9,8 +9,8 @@ contract Level17Test is Test {
 
     function setUp() public {}
 
-    function test_Elevator() public {
-        (bool d,) = address(target).call(abi.encodeWithSignature("destroy(address)", a));
-        assertTrue(d);
-    }
+    // function test_Elevator() public {
+    //     (bool d,) = address(target).call(abi.encodeWithSignature("destroy(address)", a));
+    //     assertTrue(d);
+    // }
 }

@@ -106,7 +106,14 @@ level16:
 forge script script/Level16.s.sol:Level16Script --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY -vvv --broadcast --slow 
 level17:
 forge script script/Level17.s.sol:Level17Script --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY -vvv --broadcast --slow 
-
+level18:
+forge script script/Level18.s.sol:Level18Script --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY -vvv --broadcast --slow 
+level19:
+forge script script/Level19.s.sol:Level19Script --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY -vvv --broadcast --slow 
+level20:
+forge script script/Level20.s.sol:Level20Script --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY -vvv --broadcast --slow 
+level21:
+forge script script/Level21.s.sol:Level21Script --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY -vvv --broadcast --slow 
 
 windows export .env
 Get-Content .env | ForEach-Object {
