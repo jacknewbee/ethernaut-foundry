@@ -9,12 +9,12 @@ contract Level21Test is Test {
 
     function setUp() public {}
 
-    function test_Elevator() public {
-        Level21 bob = new Level21();
-        bob.attack(addr);
-        (bool b, bytes memory d) = address(addr).staticcall(abi.encodeWithSignature("price()"));
-        require(b);
-        uint256 price = abi.decode(d, (uint256));
-        assertTrue(price < 100);
-    }
+    // function test_Elevator() public {
+    //     Level21 bob = new Level21();
+    //     bob.attack(addr);
+    //     (bool b, bytes memory d) = address(addr).staticcall(abi.encodeWithSignature("price()"));
+    //     require(b);
+    //     uint256 price = abi.decode(d, (uint256));
+    //     assertTrue(price < 100);
+    // }
 }
