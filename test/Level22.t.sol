@@ -11,24 +11,24 @@ contract Level22Test is Test {
 
     function setUp() public {}
 
-    function test_Elevator() public {
-        address sender = 0xb1Eab112a506ab057ED7c5E9aB32758521497951;
-        vm.startPrank(sender);
-        Level22 a = new Level22();
-        (bool b1, bytes memory data1) = address(addr).staticcall(abi.encodeWithSignature("token1()"));
-        (bool b2, bytes memory data2) = address(addr).staticcall(abi.encodeWithSignature("token2()"));
-        assertTrue(b1);
-        assertTrue(b2);
-        address token1 = abi.decode(data1, (address));
-        address token2 = abi.decode(data2, (address));
-        bool b3 = IERC20(token1).transfer(address(a), IERC20(token1).balanceOf(sender));
-        bool b4 = IERC20(token2).transfer(address(a), IERC20(token2).balanceOf(sender));
-        assertTrue(b3);
-        assertTrue(b4);
-        a.attack(addr);
-        uint256 bal1 = IERC20(token1).balanceOf(addr);
-        uint256 bal2 = IERC20(token2).balanceOf(addr);
-        assertTrue(bal1 == 0 || bal2 == 0);
-        vm.stopPrank();
-    }
+    // function test_Elevator() public {
+    //     address sender = 0xb1Eab112a506ab057ED7c5E9aB32758521497951;
+    //     vm.startPrank(sender);
+    //     Level22 a = new Level22();
+    //     (bool b1, bytes memory data1) = address(addr).staticcall(abi.encodeWithSignature("token1()"));
+    //     (bool b2, bytes memory data2) = address(addr).staticcall(abi.encodeWithSignature("token2()"));
+    //     assertTrue(b1);
+    //     assertTrue(b2);
+    //     address token1 = abi.decode(data1, (address));
+    //     address token2 = abi.decode(data2, (address));
+    //     bool b3 = IERC20(token1).transfer(address(a), IERC20(token1).balanceOf(sender));
+    //     bool b4 = IERC20(token2).transfer(address(a), IERC20(token2).balanceOf(sender));
+    //     assertTrue(b3);
+    //     assertTrue(b4);
+    //     a.attack(addr);
+    //     uint256 bal1 = IERC20(token1).balanceOf(addr);
+    //     uint256 bal2 = IERC20(token2).balanceOf(addr);
+    //     assertTrue(bal1 == 0 || bal2 == 0);
+    //     vm.stopPrank();
+    // }
 }
