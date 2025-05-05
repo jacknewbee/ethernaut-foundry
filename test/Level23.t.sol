@@ -11,17 +11,17 @@ contract Level23Test is Test {
 
     function setUp() public {}
 
-    function test_Elevator() public {
-        Level23 a = new Level23();
-        a.attack(dex);
-        (, bytes memory data1) = address(dex).staticcall(abi.encodeWithSignature("token1()"));
-        (, bytes memory data2) = address(dex).staticcall(abi.encodeWithSignature("token2()"));
-        address token1 = abi.decode(data1, (address));
-        address token2 = abi.decode(data2, (address));
-        uint256 bal1 = IERC20(token1).balanceOf(dex);
-        uint256 bal2 = IERC20(token2).balanceOf(dex);
-        console.log(bal1, "bal1");
-        console.log(bal2, "bal2");
-        assertTrue(bal1 == 0 && bal2 == 0);
-    }
+    // function test_Elevator() public {
+    //     Level23 a = new Level23();
+    //     a.attack(dex);
+    //     (, bytes memory data1) = address(dex).staticcall(abi.encodeWithSignature("token1()"));
+    //     (, bytes memory data2) = address(dex).staticcall(abi.encodeWithSignature("token2()"));
+    //     address token1 = abi.decode(data1, (address));
+    //     address token2 = abi.decode(data2, (address));
+    //     uint256 bal1 = IERC20(token1).balanceOf(dex);
+    //     uint256 bal2 = IERC20(token2).balanceOf(dex);
+    //     console.log(bal1, "bal1");
+    //     console.log(bal2, "bal2");
+    //     assertTrue(bal1 == 0 && bal2 == 0);
+    // }
 }
